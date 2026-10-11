@@ -141,18 +141,41 @@ Instructions
          </tbody>
      </table>
     <!-- Contact Section -->
-     <section id="contact"></section>
-     <!-- Contact Info -->
-      <h2>Contact Me</h2>
-      <a href="mailto:samuel.m.work08@gmail.com">Email Me</a>
-      <a href="tel:7325849113">Call Me</a>
-      <a href="#" onclick="alert('Coming soon!'); return false;">Sign up for our newsletter</a>
-     <!-- Footer -->
-      <footer>
+    <section id="contact">
+        <!-- Contact Info -->
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <select name="Project-type">
+                <option value="web">Web Development</option>
+                <option value="game">Game Development</option>
+                <option value="arduino">Arduino Projects</option>
+            </select>
+            <!--Radio group--->
+            <label>Budget</label>
+            <input type="radio" name="budget" value="low"> Low
+            <input type="radio" name="budget" value="medium"> Medium
+            <input type="radio" name="budget" value="high"> High
+            <!--Text inputs for name and email-->
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+            <!--Newsletter checkbox-->
+            <label>
+                <input type="checkbox" name="newsletter" value="yes"> Sign up for our newsletter
+            </label>
+        </form>
+        <a href="mailto:samuel.m.work08@gmail.com">Email Me</a>
+        <a href="tel:7325849113">Call Me</a>
+        <a href="#" onclick="alert('Coming soon!'); return false;">Sign up for our newsletter</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
         <!-- Social Links -->
         <a href="https://github.com/40892-samm">GitHub</a>
         <a href="https://www.linkedin.com/in/samuel-matos-2397173aa/">LinkedIn</a>
         <p>hi</p>
-      </footer>
+    </footer>
 </body>
 </html>
